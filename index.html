@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MapBox_Emma</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>MapboxGL</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+
+  
+<script src="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.css" rel="stylesheet" />  
+  
+  
+</head>
+<body>
+ 
+  <div id="menu_basemap">
+    <div>
+
+<button id='Gare'>Quartier Gare-Centre</button>
+<button id='Rennes1'>Université Rennes 1</button>
+<button id='Rennes2'>Université Rennes 2</button>
+
+</div>
+    <hr>
+    <label for="style-selector">Choisir un fond de carte :</label>
+    <select id="style-selector">
+        <option value="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json">Positron</option>
+        <option value="https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json">Voyager</option>
+        <option value="https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json">Ingénieur</option>
+        <option value="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json">Dark</option>
+        
+    </select>
+</div>  
+  
+<div id='map'></div>
+  
+<div class='menu'>
+    <div class='menu_overlay'>
+
+<hr>
+   <fieldset>
+   <label class="categoryLabel">Données Réferentielles</label>
+   
+     <div>
+      <input type="checkbox" id="RoutesCB" value="Routes" onchange="switchlayer('Routes')" checked/>
+                <label for="RoutesCB">Routes</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="hydrologieCB" value="hydrologie" onchange="switchlayer('hydrologie')" checked/>
+                <label for="hydrologieCB">Hydrologie</label>
+            </div>
+     
+     <div>
+      <input type="checkbox" id="Contourcommune_35238CB" value="Contourcommune_35238" onchange="switchlayer('Contourcommune_35238')" checked/>
+                <label for="Contourcommune_35238CB">Contour de Rennes</label>
+            </div>
+     
+        </fieldset>
+      
+      <hr>
+      
+        <fieldset>
+            <label class="categoryLabel">Données de transports</label>
+            <div>
+                <input type="checkbox" id="Parcs_relaisCB" value="Parcs_relais" onchange="switchlayer('Parcs_relais')" checked/>
+                <label for="Parcs_relaisCB">Parcs Relais</label>
+            </div>
+            <div>
+                <input type="checkbox" id="VLSCB" value="VLS" onchange="switchlayer('VLS')" />
+                <label for="VLSCB">Vélos STAR</label>
+            </div>
+           <div>
+                <input type="checkbox" id="ArretsCB" value="Arrets" onchange="switchlayer('Arrets')" />
+                <label for="ArretsCB">Arrêts de bus</label>
+            </div>
+           <div>
+             
+             </fieldset>
+      
+      <hr>
+      
+        <fieldset>
+            <label class="categoryLabel">Autres</label>
+                <input type="checkbox" id="batimentsCB" value="batiments" onchange="switchlayer('batiments')" />
+                <label for="batimentsCB">Batiments</label>
+            </div>
+          
+       </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

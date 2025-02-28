@@ -1,0 +1,144 @@
+#map {position:absolute; top:0; bottom:0; width:100%;}
+
+ #menu_basemap {
+            position: absolute;
+            font-family : arial;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+
+/* Popup Mapbox personnalisée en rose */
+.Mypopup .maplibregl-popup-content {
+  background-color: #FF2E94; /* Rose vif */
+  color: #fff; /* Texte blanc */
+  border-radius: 12px;
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 10px 20px rgba(255, 46, 148, 0.5); /* Ombre rose */
+  border: 2px solid #D12076; /* Bordure rose foncé */
+}
+
+.popup-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.popup-divider {
+  border: none;
+  height: 2px;
+  background: #D12076; /* Ligne séparatrice */
+  margin: 8px 0;
+}
+
+.popup-content {
+  font-size: 16px;
+}
+
+.Mypopup .maplibregl-popup-tip {
+  border-top-color: #FF2E94; /* Pointe assortie */
+}
+
+
+/* Popup Mapbox personnalisée en orange */
+.MypopupO .maplibregl-popup-content {
+  background-color: #FF8C00; /* Orange vif */
+  color: #fff; /* Texte blanc */
+  border-radius: 12px;
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5); /* Ombre douce orange */
+  border: 2px solid #D35400; /* Bordure orange foncé */
+}
+
+.popup-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.popup-divider {
+  border: none;
+  height: 2px;
+  background: #D35400; /* Ligne séparatrice */
+  margin: 8px 0;
+}
+
+.popup-content {
+  font-size: 16px;
+}
+
+.MypopupO .maplibregl-popup-tip {
+  border-top-color: #FF8C00; /* Pointe assortie */
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Popup Mapbox personnalisée en rose pastel */
+.MypopupR .maplibregl-popup-content {
+  background-color: #FFA6D1; /* Rose pastel */
+  color: #fff; /* Texte blanc */
+  border-radius: 12px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 20px rgba(255, 166, 209, 0.5); /* Ombre rose pastel */
+  border: 2px solid #FF77B0; /* Bordure rose plus soutenu */
+}
+
+.popup-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.popup-divider {
+  border: none;
+  height: 2px;
+  background: #FF77B0; /* Ligne séparatrice */
+  margin: 10px 0;
+}
+
+.popup-content {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.MypopupR .maplibregl-popup-tip {
+  border-top-color: #FFA6D1; /* Pointe assortie */
+}
+
+
+.menu {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: 200px;
+            top: 90px;
+            left: 0px;
+            padding: 10px;
+        }
+
+.menu .menu_overlay {
+            background-color: #fff;
+            box-shadow:0 1px 2px rgba(0, 0, 0, 0.10);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+.menu_overlay fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 10px;
+        }
+
+.menu_overlay .categoryLabel {
+            display: block;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }
